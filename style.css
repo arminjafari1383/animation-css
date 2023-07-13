@@ -1,0 +1,31 @@
+.translate{
+    display: flex;
+    justify-content: space-around;
+}
+img{
+    width: 49%;
+    position: relative;
+    animation: left_to_right 2s;
+}
+p{
+    width: 49%;
+    background-color: yellow;
+    position: relative;
+    animation: right_to_left 2s;
+}
+@keyframes left_to_right{
+    from{
+        left: -1000px;
+    }
+    to{
+        left: 0px;
+    }
+}
+@keyframes right_to_left{
+    from{
+        right: -1000px;
+    }
+    to{
+        right: 0px;
+    }
+}
